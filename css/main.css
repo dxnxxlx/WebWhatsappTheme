@@ -1,0 +1,48 @@
+/*Inserta tu css aqui*/
+
+.bg-green{
+	background-color: #009688;
+}
+
+.bg-gray-fondo{
+	background-color: #DFDFDF;
+}
+
+.bg-gray-cab{
+	background-color: #EEEEEE;
+}
+
+.bg-gray-text{
+	background-color: #F2F0EE;
+}
+
+.row{
+	margin: 0;
+	width: 100%;
+}
+
+
+/***MAIN***********************/
+
+header{
+	height: 127px;
+}
+
+section{
+	height: 500px;
+	position: relative;
+}
+
+.cuadro{
+	width: 80%;
+	position: absolute;
+	top: -30px;
+	left: 10%;
+	height: 100px;
+}
+
+img{
+	border-radius: 100%;
+    width: 35px;
+    height: 35px;
+}
