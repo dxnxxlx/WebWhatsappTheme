@@ -1,5 +1,11 @@
 /*Inserta tu css aqui*/
 
+/*******UTILITIES*****************/
+
+.bg-white{
+	background-color: white;
+}
+
 .bg-green{
 	background-color: #009688;
 }
@@ -16,33 +22,361 @@
 	background-color: #F2F0EE;
 }
 
+.mgtr-auto{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 .row{
 	margin: 0;
 	width: 100%;
 }
 
+.pd-0{
+	padding: 0;
+}
+.inlineb{
+	display: inline-block;
+}
 
 /***MAIN***********************/
+body{
+
+}
 
 header{
 	height: 127px;
+	position: fixed;
+	width: 100%;
+	
 }
 
 section{
-	height: 500px;
 	position: relative;
 }
 
 .cuadro{
-	width: 80%;
-	position: absolute;
-	top: -30px;
-	left: 10%;
-	height: 100px;
+	position: relative;
+	top: -100px;
+	box-shadow: 0px 1px 5px gray;
+	
+
 }
 
-img{
-	border-radius: 100%;
-    width: 35px;
-    height: 35px;
+.cab{
+	height: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+
+.cab img{
+	border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 4%;
+}
+
+.cab span{
+	float: right;
+	padding-right: 24px;
+	padding-top: 10px;
+	font-size: 20px;
+	color: #777777;
+
+}
+
+.busc {
+	height: 55px;
+	padding-top: 11px;
+	border-bottom: 1px solid #D3D3D3;
+	
+}
+.buscador {
+	margin: auto;
+	position: relative;
+	width: 90%;
+
+}
+
+
+.buscador input{
+    display: block;
+    width: 100%;
+    height: 33px;
+    padding: 6px 12px 6px 42.5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    color: #BFC1C2;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+
+}
+
+
+.buscador span{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    pointer-events: none;
+    color: #BFC1C2;
+}
+
+.chat{
+	overflow: hidden;
+    overflow-y: scroll;
+    height: 492px;
+    max-height: 100%;
+}
+
+
+.chat-per{
+	height: 67px;
+	background-color: #FEFEFE;
+	border-bottom: 1px solid #E5E5E5;
+	position: relative;
+
+}
+
+.chat-per img{
+	border-radius: 100%;
+    width: 49px;
+    height: 49px;
+    margin: 11px 15px 0 13px;
+    display: inline-block;
+    vertical-align: 0;
+    
+}
+
+.chat1{
+	display: inline;
+	vertical-align: 0;
+
+}
+
+.chat1 p{
+	display: inline-block;
+	margin-bottom: 0;
+}
+.nombre{
+	text-align: left;
+	width: 240px;
+	font-size: 15px;
+
+}
+
+.hora{
+	float: right;
+	text-align: right;
+	font-size: 12px;
+}
+
+.linea{
+	display: block;
+	font-size: 13px;
+
+}
+
+.chat-per .inlineb{
+	position: absolute;
+	top: 15px;
+}
+
+.inlineb .hora, .linea{
+	color: gray;
+
+}
+
+
+.conversacion {
+	border-left: 1px solid rgba(0,0,0,.03);
+}
+
+.cabconver{
+	height: 50px;
+}
+.cabconver img{
+	display: inline-block;
+	left: 15px;
+}
+
+
+.cabconver .chat1{
+	float: right;
+	padding-left: 70px;
+}
+
+.cabconver .chat1 p{
+	display: block;
+}
+
+.conver-chat{
+	background-color: #EDE9E4;
+	background-image: url(../image/chat-panel-bg.png);
+	background-repeat: repeat; 
+	overflow: hidden;
+    overflow-y: scroll;
+    height: 500px; 
+    width: 100%;
+    padding-top: 20px;
+}
+
+.conver-chat .row{
+	margin-left: 5%;
+    margin-right: 6%;
+    margin-bottom: 2px;
+}
+
+.g1 .row{
+	margin-left: 12%;
+    margin-right: 4%;
+}
+
+.g1 .globo:first-child {
+	width: 22%;
+    margin-left: 40%;
+}
+
+.g1 .globo:last-child {
+	width: 17%;
+    margin-left: 40%;
+}
+.globo {
+	float: left;
+	padding: 6px 7px 8px 9px;
+    background-color: white;
+    width: 40%;
+    height: 13%;
+    border-radius: 8px;
+    margin: 3px;
+}
+
+.globogian {
+	float: right;
+    clear: right;
+    background: #DCF8C6;
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 7px;
+    height: 10%;
+    border-radius: 8px;
+    margin: 3px 60px 3px;
+    
+}
+
+
+.andrea{
+	color:#AEE7FF;
+}
+
+.mariana{
+	color: #E762BC;
+}
+
+.papu{
+	color: #49D3C4;
+}
+
+.aldo{
+	color: #E8C069;
+}
+
+.andrea, .mariana, .papu, .aldo{ 
+	margin-bottom: 5px;
+}
+
+.hora2{
+	float: right;
+	font-size: 9px;
+	
+
+}
+
+.frase{
+	font-size: 11.5px;
+	margin-bottom: 1px;
+}
+
+
+
+.conversacion .buscador{
+	width: 86%;
+	margin: 0;
+}
+
+.conversacion .busc-conver{
+	height: 55px;
+	border-bottom: none;
+	margin: 0;
+	position: relative;
+	padding-top: 2px;
+	padding-left: 20px;
+    padding-right: 25px;
+	background-color: #EDE9E4;
+
+}
+
+.conversacion .buscador-conver input{
+    display: block;
+    margin-left: 50px;
+    margin-top: 6px;
+    width: 86%;
+    height: 33px;
+    padding: 6px 12px 6px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #BFC1C2;
+    background-color: #fff;
+    background-image: none;
+    border: none;
+    border-radius: 4px;
+
+}
+
+#span1{
+	float: left;
+	color: #AAA9A7;
+	font-size: 25px;
+}
+
+
+#span2{
+	float: right;
+	padding-right: 0;
+	margin-right: 10px;
+	color: #AAA9A7;
+	font-size: 25px;
+}
+
+/******SCROLLBAR********/
+
+     ::-webkit-scrollbar{
+          width: 7px;
+          background-color: #dbe8ec;
+        }
+        ::-webkit-scrollbar-button{
+          display: none;
+        }
+        ::-webkit-scrollbar-track{
+          background-color: #FEFEFE;
+    	  border: transparent;
+          -webkit-box-shadow: none;
+          -webkit-border-radius: 0;
+          border-radius: 0;
+        }
+        ::-webkit-scrollbar-thumb{
+          background-color: #CBCBCB;
+          
+        }
+     
